@@ -1,4 +1,4 @@
-\# PWClient
+# PWClient
  <p align="center">
    <img src="icons/app-icon.png" alt="PWClient Icon" width="120">
 
@@ -7,6 +7,7 @@
 
 It combines a Rust backend with a clean frontend written in HTML, CSS, and JavaScript, delivering a fast and resource-efficient experience.
 ---
+
 \## Overview
 
 PWClient is designed to be compact, responsive, and easy to use.
@@ -17,10 +18,15 @@ It takes advantage of Tauri’s small footprint and security model, while still 
 \## Features
 
 \- Lightweight and fast desktop application
+
 \- Secure, Rust-based backend
+
 \- Modern and responsive HTML/CSS/JS interface
+
 \- Cross-platform compatibility (Windows, Linux, macOS)
+
 \- Fully developed from scratch without third-party UI frameworks
+
 \- Extendable with additional modules and utilities
 
 ---
@@ -62,6 +68,3 @@ git clone https://github.com/your-username/pwclient.git
 cd pwclient
 npm install
 npm run tauri build
-
-
-
