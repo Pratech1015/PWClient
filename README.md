@@ -15,7 +15,7 @@ It combines a Rust backend with a clean frontend written in HTML, CSS, and JavaS
 ## Overview
 
 PWClient is designed to be compact, responsive, easy to use and it uses [Physics Wallah Web](https://pw.live) for its main UI.
-It takes advantage of Caching and fixed PW web bugs, to maintain peaceful learning environment.
+It takes advantage of caching and fixed PW web bugs, to maintain peaceful learning environment.
 
 ---
 
