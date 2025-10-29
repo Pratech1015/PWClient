@@ -30,7 +30,7 @@ It takes advantage of Tauri’s small footprint and security model, while still 
 \- Extendable with additional modules and utilities
 
 ---
-\## Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -40,13 +40,13 @@ It takes advantage of Tauri’s small footprint and security model, while still 
 | Package   | Cargo, npm |
 
 ---
-\## Installation
+## Installation
 
 PWClient will be distributed as a standalone, bundled executable — no manual dependency installation required.
 Once released, simply download the appropriate package for your system from the \*\*Releases\*\* section.
 ---
 
-\## Project Structure
+## Project Structure
 
 ```text
 pwclient/
