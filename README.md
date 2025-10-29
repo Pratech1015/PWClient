@@ -3,7 +3,7 @@
    <img src="https://raw.githubusercontent.com/Pratech1015/PWClient/refs/heads/main/src-tauri/icons/icon.png" alt="PWClient Icon" width="120">
  </p>
 
--
+---
 ### Description
 
 **Physics Wallah Client** is a lightweight desktop client built using the [Tauri](https://tauri.app) framework.
@@ -19,17 +19,17 @@ It takes advantage of Caching and fixed PW web bugs, to maintain peaceful learni
 
 ## Features
 
-\* Lightweight and fast desktop application
+\ - Lightweight and fast desktop application
 
-\* Secure, Rust-based backend
+\ - Secure, Rust-based backend
 
-\* Modern and responsive HTML/CSS/JS interface
+\ - Modern and responsive HTML/CSS/JS interface
 
-\* Cross-platform compatibility (Windows, Linux, macOS)
+\ - Cross-platform compatibility (Windows, Linux, macOS)
 
-\* Fully developed from scratch without third-party UI frameworks
+\ - Fully developed from scratch without third-party UI frameworks
 
-\* Extendable with additional modules and utilities
+\ - Extendable with additional modules and utilities
 
 ---
 ## Tech Stack
