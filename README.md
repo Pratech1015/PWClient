@@ -44,10 +44,12 @@ It takes advantage of Caching and fixed PW web bugs, to maintain peaceful learni
 | Package   | Cargo, npm |
 
 ---
+
 ## Installation
 
 PWClient will be distributed as a standalone, bundled executable — no manual dependency installation required.
 Once released, simply download the appropriate package for your system from the [**Releases**](https://github.com/Pratech1015/PWClient/releases) section.
+
 ---
 
 ## Project Structure

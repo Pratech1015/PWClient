@@ -66,12 +66,20 @@ fn main() {
         })
         .on_menu_event(|app, event| {
             match event.id().as_ref() {
+                // ==== File Menu ====
                 "exit" => {
                     app.exit(0);
                 }
                 "about" => {
-                    if let Some(window) = app.get_webview_window("main") {
-                        let _ = window.eval("window.location.href = 'about.html';");
+                    // Open a small popup with about.html
+                    if app.get_webview_window("about").is_none() {
+                        let _ = WebviewWindowBuilder::new(app, "about", WebviewUrl::App("about.html".into()))
+                            .title("About PWClient")
+                            .inner_size(400.0, 300.0)
+                            .resizable(false)
+                            .decorations(true)
+                            .center()
+                            .build();
                     }
                 }
                 "reload" | "refresh" => {
@@ -81,7 +89,7 @@ fn main() {
                 }
                 "home" => {
                     if let Some(window) = app.get_webview_window("main") {
-                        let _ = window.eval("window.location.href = '/';");
+                        let _ = window.eval("window.location.href = 'index.html';");
                     }
                 }
                 "back" => {
@@ -94,6 +102,87 @@ fn main() {
                         let _ = window.eval("history.forward();");
                     }
                 }
+
+                // ==== Edit Menu ====
+                "copy" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("document.execCommand('copy');");
+                    }
+                }
+                "cut" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("document.execCommand('cut');");
+                    }
+                }
+                "paste" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("document.execCommand('paste');");
+                    }
+                }
+                "select_all" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("document.execCommand('selectAll');");
+                    }
+                }
+                "find" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("window.find('');");
+                    }
+                }
+
+                // ==== View Menu ====
+                "fullscreen" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval(
+                            "if (!document.fullscreenElement) { document.documentElement.requestFullscreen(); } else { document.exitFullscreen(); }",
+                        );
+                    }
+                }
+                "zoom_in" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("document.body.style.zoom = (parseFloat(document.body.style.zoom || 1) + 0.1).toFixed(1);");
+                    }
+                }
+                "zoom_out" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("document.body.style.zoom = (parseFloat(document.body.style.zoom || 1) - 0.1).toFixed(1);");
+                    }
+                }
+                "reset_zoom" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("document.body.style.zoom = 1;");
+                    }
+                }
+
+                // ==== Tools Menu ====
+                "downloads" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("alert('Downloads page coming soon!');");
+                    }
+                }
+                "feature1" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("alert('Custom Feature 1 - Work in Progress');");
+                    }
+                }
+                "feature2" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("alert('Custom Feature 2 - Work in Progress');");
+                    }
+                }
+
+                // ==== Help Menu ====
+                "set_download_loc" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("alert('Set Download Location - Coming soon!');");
+                    }
+                }
+                "report" => {
+                    if let Some(window) = app.get_webview_window("main") {
+                        let _ = window.eval("alert('Bug reporting feature coming soon!');");
+                    }
+                }
+
                 _ => {}
             }
         })
