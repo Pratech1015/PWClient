@@ -4,10 +4,12 @@
  </p>
 
 ---
+
 ### Description
 
 **Physics Wallah Client** is a lightweight desktop client built using the [Tauri](https://tauri.app) framework.
 It combines a Rust backend with a clean frontend written in HTML, CSS, and JavaScript, delivering a fast and resource-efficient experience while studying.
+
 ---
 
 ## Overview
@@ -19,17 +21,17 @@ It takes advantage of Caching and fixed PW web bugs, to maintain peaceful learni
 
 ## Features
 
-\ - Lightweight and fast desktop application
+- Lightweight and fast desktop application
 
-\ - Secure, Rust-based backend
+- Secure, Rust-based backend
 
-\ - Modern and responsive HTML/CSS/JS interface
+- Modern and responsive HTML/CSS/JS interface
 
-\ - Cross-platform compatibility (Windows, Linux, macOS)
+- Cross-platform compatibility (Windows, Linux, macOS)
 
-\ - Fully developed from scratch without third-party UI frameworks
+- Fully developed from scratch without third-party UI frameworks
 
-\ - Extendable with additional modules and utilities
+- Extendable with additional modules and utilities
 
 ---
 ## Tech Stack
@@ -45,13 +47,13 @@ It takes advantage of Caching and fixed PW web bugs, to maintain peaceful learni
 ## Installation
 
 PWClient will be distributed as a standalone, bundled executable — no manual dependency installation required.
-Once released, simply download the appropriate package for your system from the **Releases** section.
+Once released, simply download the appropriate package for your system from the [**Releases**](https://github.com/Pratech1015/PWClient/releases) section.
 ---
 
 ## Project Structure
 
 ```text
-pwclient/
+PWClient/
 ├── .vscode/            # VSCode Extensions
 ├── src-tauri/          # Rust backend (logic, configuration)
 ├── src/                # Frontend Code (HTML, CSS, JS)
