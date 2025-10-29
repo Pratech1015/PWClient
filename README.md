@@ -3,6 +3,7 @@
    <img src="https://raw.githubusercontent.com/Pratech1015/PWClient/refs/heads/main/src-tauri/icons/icon.png" alt="PWClient Icon" width="120">
  </p>
 
+#
 ### Description
 
 **Physics Wallah Client** is a lightweight desktop client built using the [Tauri](https://tauri.app) framework.
@@ -37,26 +38,27 @@ It takes advantage of Caching and fixed PW web bugs, to maintain peaceful learni
 |-----------|------------|
 | Framework |   Tauri    |
 |  Backend  |    Rust    |
-|  Frontend | htm,css,js |
+|  Frontend | HTML, CSS, JS |
 | Package   | Cargo, npm |
 
 ---
 ## Installation
 
 PWClient will be distributed as a standalone, bundled executable — no manual dependency installation required.
-Once released, simply download the appropriate package for your system from the \*\*Releases\*\* section.
+Once released, simply download the appropriate package for your system from the **Releases** section.
 ---
 
 ## Project Structure
 
 ```text
 pwclient/
-├── src-tauri/        # Rust backend (logic, configuration)
-├── src/              # Frontend (HTML, CSS, JS)
-├── icons/            # Application icons
-├── package.json      # Project metadata and build scripts
-├── Cargo.toml        # Rust dependencies and settings
-└── README.md         # Project documentation
+├── .vscode/            # VSCode Extensions
+├── src-tauri/          # Rust backend (logic, configuration)
+├── src/                # Frontend Code (HTML, CSS, JS)
+├── .gitignore          # Git ignore files
+├── README.md           # Project 
+├── package-lock.json   # Client Dependency Lock
+└── package.json        # Client Version Configuration
 ```
 ---
 
@@ -65,7 +67,7 @@ pwclient/
 If you wish to build from source:
 
 ```bash
-git clone https://github.com/your-username/pwclient.git
-cd pwclient
+git clone https://github.com/Pratech1015/PWClient.git
+cd PWClient
 npm install
-npm run tauri build
+npm run tauri dev
