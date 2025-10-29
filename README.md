@@ -1,17 +1,18 @@
 # PWClient
- <p align="center">
+ <p align="left">
    <img src="https://raw.githubusercontent.com/Pratech1015/PWClient/refs/heads/main/src-tauri/icons/icon.png" alt="PWClient Icon" width="120">
-
  </p>
-\*\*PWClient\*\* is a lightweight desktop client built using the \[Tauri](https://tauri.app/) framework.
 
-It combines a Rust backend with a clean frontend written in HTML, CSS, and JavaScript, delivering a fast and resource-efficient experience.
+### Description
+
+**Physics Wallah Client** is a lightweight desktop client built using the [Tauri](https://tauri.app) framework.
+It combines a Rust backend with a clean frontend written in HTML, CSS, and JavaScript, delivering a fast and resource-efficient experience while studying.
 ---
 
 ## Overview
 
-PWClient is designed to be compact, responsive, and easy to use.
-It takes advantage of Tauri’s small footprint and security model, while still offering flexibility through web technologies.
+PWClient is designed to be compact, responsive, easy to use and it uses [Physics Wallah Web](https://pw.live) for its main UI.
+It takes advantage of Caching and fixed PW web bugs, to maintain peaceful learning environment.
 
 ---
 
