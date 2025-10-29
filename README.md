@@ -1,6 +1,6 @@
 # PWClient
  <p align="center">
-   <img src="icons/app-icon.png" alt="PWClient Icon" width="120">
+   <img src="https://raw.githubusercontent.com/Pratech1015/PWClient/refs/heads/main/src-tauri/icons/icon.png" alt="PWClient Icon" width="120">
 
  </p>
 \*\*PWClient\*\* is a lightweight desktop client built using the \[Tauri](https://tauri.app/) framework.
@@ -8,14 +8,14 @@
 It combines a Rust backend with a clean frontend written in HTML, CSS, and JavaScript, delivering a fast and resource-efficient experience.
 ---
 
-\## Overview
+## Overview
 
 PWClient is designed to be compact, responsive, and easy to use.
 It takes advantage of Tauri’s small footprint and security model, while still offering flexibility through web technologies.
 
 ---
 
-\## Features
+## Features
 
 \- Lightweight and fast desktop application
 
