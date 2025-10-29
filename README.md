@@ -14,38 +14,20 @@ It combines a Rust backend with a clean frontend written in HTML, CSS, and JavaS
 PWClient is designed to be compact, responsive, and easy to use.
 It takes advantage of Tauri’s small footprint and security model, while still offering flexibility through web technologies.
 
-# 
+---
 
-# ---
+\## Features
 
-# 
+\- Lightweight and fast desktop application
+\- Secure, Rust-based backend
+\- Modern and responsive HTML/CSS/JS interface
+\- Cross-platform compatibility (Windows, Linux, macOS)
+\- Fully developed from scratch without third-party UI frameworks
+\- Extendable with additional modules and utilities
 
-# \## Features
+---
+\## Tech Stack
 
-# 
-
-# \- Lightweight and fast desktop application
-
-# \- Secure, Rust-based backend
-
-# \- Modern and responsive HTML/CSS/JS interface
-
-# \- Cross-platform compatibility (Windows, Linux, macOS)
-
-# \- Fully developed from scratch without third-party UI frameworks
-
-# \- Extendable with additional modules and utilities
-
-# 
-
-# ---
-
-# 
-
-# \## Tech Stack
-
-# 
-`
 | Component | Technology |
 |-----------|------------|
 | Framework |   Tauri    |
@@ -70,7 +52,7 @@ pwclient/
 ├── package.json      # Project metadata and build scripts
 ├── Cargo.toml        # Rust dependencies and settings
 └── README.md         # Project documentation
-
+```
 ---
 
 ## Build (for developers)
